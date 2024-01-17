@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_background_01"
+    tools:context=".view.LoginActivity">
+
+    <View
+        android:id="@+id/ViewLoginBackground"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/view_background_login"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="48sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ViewLoginBackground" />
+
+    <TextView
+        android:id="@+id/EntradaNomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="123.9dp"
+        android:text="@string/nome_usuario_login_txt"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="@id/ViewLoginBackground"
+        app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
+        app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground" />
+
+    <EditText
+        android:id="@+id/EntradaNomeHint"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_nome_hint"
+        android:inputType="number|numberDecimal"
+        android:autofillHints="null"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/light_gray"
+
+
+        app:layout_constraintTop_toBottomOf="@id/EntradaNomeText"
+        app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
+        app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground" />
+
+    <TextView
+        android:id="@+id/EntradaSaldoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:text="@string/saldo_inicial_txt"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/EntradaNomeHint"
+        app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
+        app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground" />
+
+    <EditText
+        android:id="@+id/EntradaSaldoHint"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_saldo_inicial_hint"
+        android:inputType="number|numberDecimal"
+        android:autofillHints="null"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/light_gray"
+
+
+        app:layout_constraintTop_toBottomOf="@id/EntradaSaldoText"
+        app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
+        app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,11 @@
     <string name="nome_default_usuario">nome</string>
     <string name="btn_sacar_txt">Sacar</string>
     <string name="btn_depositar_txt">Depositar</string>
+    <string name="hint_valor_inserido_user">digite o valor desejado</string>
+    <string name="insira_um_valor_txt">Insira um valor</string>
+    <string name="login_text">Banco UDI</string>
+    <string name="nome_usuario_login_txt">Nome</string>
+    <string name="digite_seu_nome_hint">digite seu nome</string>
+    <string name="saldo_inicial_txt">Saldo Inicial</string>
+    <string name="digite_seu_saldo_inicial_hint">digite seu saldo inicial</string>
 </resources>

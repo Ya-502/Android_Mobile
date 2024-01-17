@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_gray"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
 
     <View
@@ -41,7 +41,7 @@
         android:layout_marginBottom="75dp"
         android:text="@string/saudacoes_usuario_txt"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
 
         app:layout_constraintTop_toBottomOf="@id/BancoNomeText"
         app:layout_constraintBottom_toBottomOf="@id/SaldoUsuario"
@@ -52,9 +52,10 @@
         android:id="@+id/NomeUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:text="@string/nome_default_usuario"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
 
         app:layout_constraintTop_toBottomOf="@id/SaudacoesUsuario"
         app:layout_constraintBottom_toTopOf="@id/SaldoUsuario"
@@ -111,6 +112,39 @@
         app:layout_constraintTop_toBottomOf="@id/BTNSacar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtInserirValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="114.4dp"
+        android:text="@string/insira_um_valor_txt"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/BTNDepositar"
+        app:layout_constraintBottom_toTopOf="@id/ValorDinheiroUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/ValorDinheiroUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+
+        android:hint="@string/hint_valor_inserido_user"
+        android:inputType="number|numberDecimal"
+        android:autofillHints="none"
+
+        app:layout_constraintTop_toBottomOf="@id/TxtInserirValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
 
     <View
         android:id="@+id/ViewRedBackgroundBotton"
