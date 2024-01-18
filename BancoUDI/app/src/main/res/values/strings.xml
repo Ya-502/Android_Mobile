@@ -13,4 +13,5 @@
     <string name="digite_seu_nome_hint">digite seu nome</string>
     <string name="saldo_inicial_txt">Saldo Inicial</string>
     <string name="digite_seu_saldo_inicial_hint">digite seu saldo inicial</string>
+    <string name="btn_confirmar_txt">Confirmar</string>
 </resources>

@@ -83,9 +83,9 @@
         android:id="@+id/BTNSacar"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:minHeight="48dp"
-        android:background="@drawable/custom_button"
+        android:layout_marginTop="70dp"
+        android:minHeight="60dp"
+        android:backgroundTint="@color/gray"
         android:text="@string/btn_sacar_txt"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -101,8 +101,8 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:minHeight="48dp"
-        android:background="@drawable/custom_button"
+        android:minHeight="60dp"
+        android:backgroundTint="@color/gray"
         android:text="@string/btn_depositar_txt"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -117,7 +117,7 @@
         android:id="@+id/TxtInserirValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="114.4dp"
         android:text="@string/insira_um_valor_txt"
         android:textColor="@color/black"
@@ -145,6 +145,24 @@
         app:layout_constraintStart_toStartOf="parent"
 
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTNConfirmar"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:minHeight="60dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/btn_confirmar_txt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        android:enabled="false"
+
+        app:layout_constraintTop_toBottomOf="@id/ValorDinheiroUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <View
         android:id="@+id/ViewRedBackgroundBotton"
