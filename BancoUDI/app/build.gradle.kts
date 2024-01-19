@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.bancoudi"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.bancoudi"
@@ -25,6 +25,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    viewBinding{
+        enable = true
     }
 }
 

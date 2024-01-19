@@ -12,7 +12,7 @@ import com.example.bancoudi.model.ModelBancoDados;
 public class ControllerBancoDados {
 
     private ModelBancoDados dbHelper;
-    private Context context;
+    private final Context context;
     private SQLiteDatabase database;
 
     public ControllerBancoDados(Context context) {
@@ -42,11 +42,11 @@ public class ControllerBancoDados {
                 null, null, null, null, null);
     }
 
-    public int updateSaldo(long id, String newSaldo) {
+    public int updateSaldo(String titular, String newSaldo) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(ModelBancoDados.COLUNA_SALDO, newSaldo);
-        String whereClause = ModelBancoDados.COLUNA_ID + " = ?";
-        String[] whereArgs = {String.valueOf(id)};
+        String whereClause = ModelBancoDados.COLUNA_TITULAR + " = ?";
+        String[] whereArgs = {titular};
         return database.update(ModelBancoDados.NOME_TABELA, contentValues, whereClause, whereArgs);
     }
 }

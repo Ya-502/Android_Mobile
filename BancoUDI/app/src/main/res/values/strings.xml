@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Banco UDI</string>
+    <string name="app_name">Banco UDI2</string>
     <string name="nome_banco_txt">Banco UDI</string>
     <string name="saldo_usuario_number">0.00</string>
     <string name="saudacoes_usuario_txt">seja bem vindo</string>
@@ -14,4 +14,5 @@
     <string name="saldo_inicial_txt">Saldo Inicial</string>
     <string name="digite_seu_saldo_inicial_hint">digite seu saldo inicial</string>
     <string name="btn_confirmar_txt">Confirmar</string>
+    <string name="entrar_conta_btn_txt">Entrar</string>
 </resources>

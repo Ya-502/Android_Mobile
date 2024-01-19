@@ -10,7 +10,7 @@
     <View
         android:id="@+id/ViewLoginBackground"
         android:layout_width="350dp"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/view_background_login"
 
@@ -53,8 +53,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="@string/digite_seu_nome_hint"
-        android:inputType="number|numberDecimal"
-        android:autofillHints="null"
+        android:inputType="text"
         android:minHeight="48dp"
         android:minWidth="48dp"
         android:textSize="14sp"
@@ -84,8 +83,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="@string/digite_seu_saldo_inicial_hint"
-        android:inputType="number|numberDecimal"
-        android:autofillHints="null"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:minWidth="48dp"
         android:textSize="14sp"
@@ -95,6 +93,23 @@
         app:layout_constraintTop_toBottomOf="@id/EntradaSaldoText"
         app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
         app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTNentrarNoApp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+
+        android:text="@string/entrar_conta_btn_txt"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/EntradaSaldoHint"
+        app:layout_constraintBottom_toBottomOf="@id/ViewLoginBackground"
+        app:layout_constraintStart_toStartOf="@id/ViewLoginBackground"
+        app:layout_constraintEnd_toEndOf="@id/ViewLoginBackground"
+        />
 
 
 
