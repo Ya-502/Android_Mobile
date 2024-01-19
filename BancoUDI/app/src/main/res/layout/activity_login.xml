@@ -11,12 +11,13 @@
         android:id="@+id/ViewLoginBackground"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="125dp"
         android:background="@drawable/view_background_login"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <TextView
@@ -98,6 +99,7 @@
         android:id="@+id/BTNentrarNoApp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
         android:minHeight="55dp"
 
         android:text="@string/entrar_conta_btn_txt"

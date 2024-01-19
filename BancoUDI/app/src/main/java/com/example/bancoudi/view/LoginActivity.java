@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         dadosBancarios = new DadosBancarios();
+
         controllerBancoDados = new ControllerBancoDados(this);
         controllerBancoDados.open();
 
@@ -34,11 +35,8 @@ public class LoginActivity extends AppCompatActivity {
             String nome = binding.EntradaNomeHint.getText().toString().trim();
             String saldo = binding.EntradaSaldoHint.getText().toString().trim();
 
-            intent.putExtra("titular", nome);
-            intent.putExtra("saldo", saldo);
 
             if (!saldo.isEmpty() && !nome.isEmpty()) {
-
                 try {
                     Double saldoConverte = Double.parseDouble(saldo);
                     dadosBancarios.setSaldo(saldoConverte);
@@ -46,7 +44,13 @@ public class LoginActivity extends AppCompatActivity {
 
                     controllerBancoDados.insertData(nome, saldo);
 
-                }catch (NumberFormatException e){
+                    intent.putExtra("titular", nome);
+                    intent.putExtra("saldo", saldo);
+
+                    startActivity(intent);
+                    finish();
+
+                }catch (Exception e){
                     e.printStackTrace();
                 }
 
@@ -54,8 +58,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "UM DOS CAMPOS ESTÁ VAZIO", Toast.LENGTH_LONG).show();
             }
 
-                startActivity(intent);
-                finish();
 
         });
 

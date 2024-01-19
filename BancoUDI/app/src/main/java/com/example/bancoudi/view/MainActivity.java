@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.BTNSacar.setOnClickListener(v -> {
             String valorTxt = binding.ValorDinheiroUser.getText().toString().trim();
-            String saldoAtual = binding.SaldoUsuario.getText().toString();
+            String saldoAtual = binding.SaldoUsuario.getText().toString().trim();
 
             if (!valorTxt.isEmpty()){
                 try {
